@@ -1,8 +1,9 @@
-# The 24-Hour Sprint: Execution Plan
+# The Hackathon Sprint: Execution Plan
 
-**Duration:** 24 hours (one continuous or split into 2 x 12h sessions)  
-**Team:** Jasmine (PM/Visionary) + Teammate (Visualizer/Technologist)  
-**Goal:** Working prototype ready for demo, with practiced walkthrough
+**Event:** Music Hackspace Music Technology Hackathon, Lisbon  
+**Duration:** Saturday 12:00 PM → Sunday 5:30 PM (~29.5 hours available)  
+**Team:** Jasmine (PM/Visionary) + Valeria (Visualizer/Technologist)  
+**Goal:** Working prototype ready for demo at 4:00 PM Sunday, with practiced walkthrough
 
 ---
 
@@ -11,7 +12,7 @@
 ### Jasmine (PM/Visionary)
 **Primary responsibility:** Demo library + demo script + product decisions
 
-**During sprint:**
+**During hackathon:**
 - Curate and tag 150 real tracks (6–10 hours)
 - Identify rediscovery hero track (1–2 hours, part of curation)
 - Write and practice demo script (2–3 hours)
@@ -24,10 +25,10 @@
 - Demo script (3 versions: 30-sec, 60-sec, 5–7 min)
 - Final walkthrough practiced and timed
 
-### Teammate (Visualizer/Technologist)
+### Valeria (Visualizer/Technologist)
 **Primary responsibility:** UI/interaction + spatial encoding
 
-**During sprint:**
+**During hackathon:**
 - Design spatial encoding (confirm X/Y/color mapping) (1–2 hours)
 - Build timeline view (2–3 hours)
 - Build constellation view structure (4–6 hours)
@@ -46,72 +47,81 @@
 
 ---
 
-## Hour-by-Hour Breakdown (Rough Timeline)
+## Saturday Timeline (Day 1)
 
-### Hours 0–2: Planning & Alignment (Synchronous)
+### 12:00 PM – 2:00 PM: Planning & Alignment (Synchronous)
+
+**Location:** Team table at hackathon  
+**Duration:** 2 hours (includes lunch for some)
 
 **Jasmine:**
-- Review PRD + IMPLEMENTATION-BRIEF
-- Identify Creative Commons music sources
-- Set up spreadsheet for track curation
-- Define library format (JSON structure)
+- Quick review of PRD + IMPLEMENTATION-BRIEF
+- Identify Creative Commons music sources to start with
+- Set up laptop for track curation workflow
+- Define library format (JSON structure confirmation)
+- Get first 10–20 tracks queued up for listening
 
-**Teammate:**
-- Review PRD + IMPLEMENTATION-BRIEF
+**Valeria:**
+- Quick review of PRD + IMPLEMENTATION-BRIEF
 - Confirm tech stack choice (React/Vue/HTML+JS)
 - Set up dev environment (Node, build tools, GitHub repo)
-- Design spatial encoding (confirm X/Y/color mapping)
-- Create initial component structure / mockup
+- Design spatial encoding (confirm X/Y/color mapping visually)
+- Create initial component mockup / wireframe on paper/Figma
 
-**Sync point (end of hour 2):**
+**Sync checkpoint (end of 2:00 PM):**
 - Both understand the three-layer model
 - Track data format is finalized
 - Tech stack is decided
-- Spatial encoding is confirmed
-- Libraries/frameworks are installed
-- Timeline: "On track? Any blockers?"
+- Spatial encoding is confirmed (sketch/wireframe visible)
+- Dev environment is ready
+- Jasmine is ready to start listening
+- Valeria is ready to start building
 
 ---
 
-### Hours 2–10: Heavy Lift (Can be parallel with checkins)
+### 2:00 PM – 6:00 PM Saturday: Heavy Lift (Parallel work)
 
-#### Jasmine's Work (6–8 hours for library)
-- Start sourcing tracks from Creative Commons sources
-- Listen to each track (3–5 min per track)
+**Jasmine's Work (Library curation)**
+- Listen to tracks from CC sources (3–5 min per track)
 - Tag each track using three questions:
   - When would I play this? (Time/Setting)
   - What does it do in a set? (Journey Role)
   - What crowd state does it need? (Crowd State)
 - Build up JSON file as you go
-- Identify 3–5 underplayed candidates for rediscovery
+- Target: 40–50 tracks by 6:00 PM (enough for Pool Party constellation)
 
-**Parallel:** While curation is happening, make index to track which ones are Pool Party.
-
-#### Teammate's Work (6–8 hours for UI structure)
+**Valeria's Work (UI structure)**
 - Build timeline view (shows 5 phase buttons)
 - Build constellation view shell (grid structure, zone labels)
 - Set up track data loading (reads JSON from Jasmine)
 - Test with sample data (10–20 dummy tracks)
 - Implement basic hover interaction
 
-**Checkin point (end of hour 8):**
-- Jasmine: 80–100 tracks curated and tagged
-- Teammate: Timeline and constellation shell working with dummy data
+**Timeline:**
+- 2:00 PM: Both start heavy work
+- 3:00 PM: Informal checkin (no need to pause)
+- 4:00 PM: Dinner served (continue hacking while eating)
+- 5:00 PM: Quick sync (Jasmine: how many tracks? Valeria: prototype working?)
+- 6:00 PM: Checkpoint
+
+**Checkpoint (end of 6:00 PM):**
+- Jasmine: 40–50 tracks curated and tagged (enough for MVP constellation)
+- Valeria: Timeline and constellation shell working with dummy data
 - Both: Confirm data format matches (no mismatches)
 
 ---
 
-### Hours 10–16: Integration (Parallel)
+### 6:00 PM Saturday – 12:00 AM Sunday: Integration & Late Night Push
 
-#### Jasmine's Work (Finish library + start demo)
-- Complete library curation (150 total tracks)
-- Final QA on tagging (listen to random samples, check for consistency)
-- Export final JSON with all 150 tracks
-- Identify rediscovery hero track (should be obvious during curation)
-- Start writing demo script (30-sec, 60-sec, 5–7 min)
+**Jasmine's Work (Continue curation + start demo)**
+- Continue tagging tracks through evening
+- Target: 100–120 tracks by midnight
+- Identify 3–5 underplayed candidates (this emerges as you listen)
+- Begin writing demo script outline (30-sec, 60-sec versions)
+- Take breaks (dinner available, rest eyes periodically)
 
-#### Teammate's Work (Integrate real data + interactions)
-- Load real 150-track JSON from Jasmine
+**Valeria's Work (Integrate real data as it arrives)**
+- As Jasmine's JSON updates come in, load tracks into constellation
 - Filter to Pool Party tracks only (40–50)
 - Position all tracks in constellation (hardcoded positions based on tags)
 - Implement click interaction (show track detail view)
@@ -119,115 +129,160 @@
 - Add underplayed signal (visual indicator for play count < 5)
 - Test on target device/screen size
 
-**Checkin point (end of hour 16):**
-- Jasmine: Library complete, demo script drafted
-- Teammate: Full prototype working with real data, all interactions functional
-- Both: Can run a full walkthrough (will be slow, but no errors)
+**Timeline:**
+- 6:00 PM: Dinner served, continue hacking
+- 8:00 PM: Check-in (Jasmine: ~80 tracks? Valeria: interactions working?)
+- 10:00 PM: Informal sync (no need to stop working)
+- 12:00 AM Sunday: Checkpoint
+
+**Checkpoint (end of Saturday, midnight):**
+- Jasmine: 100–120 tracks curated and tagged
+- Valeria: Full prototype working with real data, all core interactions functional
+- Both: Could do a walthrough (might have some bugs, but not crashing)
 
 ---
 
-### Hours 16–22: Polish & QA (Parallel)
+### 12:00 AM – 9:00 AM Sunday: Night Sprint & Morning Crunch
 
-#### Jasmine's Work (Practice + refinement)
-- Practice demo script (multiple times)
-- Time the 5–7 minute walkthrough
-- Get feedback on narrative flow
-- Refine opening hook and closing moment
-- Plan Q&A responses (common judge questions)
-- Prepare backup plan (screenshots, second laptop setup)
+**Location:** Still at hackathon (some may rest, but work continues)
 
-#### Teammate's Work (Visual polish + robustness)
+**Jasmine's Work (Finish library + complete demo script)**
+- Complete final batch of track curation (target 150 total)
+- Final QA on tagging (spot-check for consistency)
+- Identify the hero rediscovery track (should be obvious by now)
+- Export final 150-track JSON with all tags complete
+- Begin writing full demo script (30-sec, 60-sec, 5–7 min versions)
+- Get some sleep if possible (2–4 hours recommended)
+
+**Valeria's Work (Polish & robustness)**
+- Load final 150-track JSON once Jasmine exports it
+- Make sure all 40–50 Pool Party tracks are positioned
 - Test all interactions thoroughly
 - Fix any bugs or lag issues
 - Refine hover feedback (ensure <100ms)
-- Optimize performance (if needed)
-- Check responsive behavior (zoom, different screen sizes)
+- Optimize performance
+- Check responsive behavior
 - Clean up code, remove console errors
-- Test on multiple browsers/devices if possible
+- Get some sleep if possible (2–4 hours recommended)
 
-**Specific QA checklist (Teammate):**
-- [ ] Timeline view shows 5 phases clearly
-- [ ] Click Pool Party → constellation loads smoothly
-- [ ] All 40–50 tracks visible and positioned correctly
-- [ ] Zone labels are readable
-- [ ] Hover over track → nearby tracks respond visibly
-- [ ] Hover latency is <100ms
-- [ ] Click track → detail view shows all info
-- [ ] Detail view shows underplayed badge if applicable
-- [ ] No console errors
-- [ ] No crashes on any interaction
+**Timeline:**
+- 12:00 AM: Midnight checkpoint
+- 2:00 AM: Quick sync (how's it going?)
+- 4:00 AM: Both should try to get rest if possible
+- 6:00 AM: One or both wake up, resume work
+- 9:00 AM: Morning coffee break, final push begins
 
-**Specific QA checklist (Jasmine):**
-- [ ] Rediscovery track is genuinely good
-- [ ] Rediscovery track has play count < 5
-- [ ] Rediscovery track is in Pool Party context
-- [ ] Demo script flows naturally (not memorized)
-- [ ] Timing is 5–7 minutes (not longer)
-- [ ] Opening hook is strong
-- [ ] Closing moment is memorable
-- [ ] Can explain three-layer model in <90 seconds
+**Morning Checkpoint (9:00 AM Sunday):**
+- Jasmine: Library fully curated and tagged (all 150 done)
+- Valeria: Prototype polished, interactions responsive, no crashes
+- Both: Ready to practice and refine
 
-**Checkin point (end of hour 22):**
-- Jasmine: Demo script practiced, timing locked, Q&A answers ready
-- Teammate: Prototype is polished, no crashes, responsive
-- Both: Can do full walkthrough without errors
+### 9:00 AM – 12:00 PM Sunday: Final Polish & Script
 
----
+**Jasmine's Work (Script refinement + practice)**
+- Finalize demo script (30-sec, 60-sec, 5–7 min versions)
+- Identify the hero rediscovery track if not done yet
+- Practice script (multiple times, refine as you go)
+- Time the 5–7 minute walkthrough
+- Prepare Q&A responses (common judge questions from JUDGE-RESONANCE.md)
+- Review product talking points
+- Eat breakfast, take a walk, clear your head
 
-### Hours 22–24: Final Prep & Backup (Synchronous)
+**Valeria's Work (Final technical polish)**
+- Final QA pass: test every interaction
+- Fix any last-minute bugs (quick fixes only)
+- Optimize hover latency if needed
+- Ensure no console errors
+- Test on the actual presentation device/screen
+- Make sure demo data is loaded and ready
+- Eat breakfast, take a walk, stay fresh
 
-#### Joint Work
+**Timeline:**
+- 9:00 AM: Coffee, breakfast, team sync
+- 9:30 AM: Both resume work on their tasks
+- 10:00 AM: Informal check-in
+- 11:00 AM: "Is everything ready?"
+- 12:00 PM: Checkpoint
+
+**Checkpoint (12:00 PM, 4 hours before presentations):**
+- Jasmine: Script is practiced, timing is locked (5–7 min)
+- Valeria: Prototype is polished, no crashes, responsive
+- Both: Ready for one final full walkthrough
+
+### 12:00 PM – 3:00 PM Sunday: Final Walkthrough & Backup
+
+**Joint Work**
 - Do **one full walkthrough** with the actual prototype (no stopping, full script)
 - Time it (should be 5–7 minutes)
-- Note any last-minute fixes needed (quick bug fixes only)
+- Note any last-minute fixes needed (quick bug fixes only, quick tweaks only)
 - Create screenshots of key moments (Timeline, Constellation, Hero Track Detail)
 - Set up backup laptop with demo ready (if possible)
 - Print 1-page fallback guide (how to explain if tech breaks)
-- Review talking points one more time
+- Prepare talking points and confidence
+
+**Timeline:**
+- 12:00 PM: Start full walkthrough
+- 12:10 PM: Walthrough complete, time noted
+- 12:15 PM: Screenshots captured
+- 12:30 PM: Second walkthrough for confidence
+- 1:00 PM: Break, lunch, rest before presentations
+- 2:00 PM: Team meets, does final confidence check
+- 3:00 PM: Ready to present, no more changes
+- 3:30 PM: Head to presentation stage, final tech check
 
 **Final QA before demo:**
 - [ ] Prototype runs smoothly start to finish
 - [ ] No crashes during full walkthrough
 - [ ] Rediscovery moment lands emotionally
-- [ ] Script flows naturally
-- [ ] Timing is locked (5–7 min)
+- [ ] Script flows naturally and is timed (5–7 min)
 - [ ] Backup plan is documented
 - [ ] Backup screenshots captured
+- [ ] Backup laptop is ready (if available)
 - [ ] Team is confident
 
-**End of hour 24:**
-- Prototype is **ready for demo**
-- Script is **practiced and locked in**
-- Backup plan is **documented**
-- Team is **confident**
+### 4:00 PM Sunday: Presentation Time
+
+**Your moment.** You've built something real for a real problem. 
+- Demo runs. 
+- Story lands. 
+- Judges see the concept works. 
+- Team is confident. 
+- Good luck. 🎵
 
 ---
 
-## Resource Allocation (Team Effort)
+## Realistic Time Allocation (Hackathon Sprint)
 
-### Jasmine's Time (10–12 hours)
-- Library curation: 6–8 hours
-- Library QA: 1–2 hours
-- Demo script: 2–3 hours
-- Practice: 1–2 hours
-- Final QA: 1 hour
-- **Total:** ~13 hours of focused work
+### Available Time
+- Saturday 12:00 PM – Sunday 5:30 PM = ~29.5 hours
+- Minus meals, breaks, rest = ~24 hours of focused work
+- Minus final presentations = demo done by 4:00 PM
 
-### Teammate's Time (14–16 hours)
-- Planning & setup: 1–2 hours
-- UI development: 10–12 hours
-- Polish & QA: 2–4 hours
-- Final walkthrough: 0.5 hour
-- **Total:** ~14–16 hours of focused work
+### Jasmine's Allocation (~14–15 hours)
+- Planning & setup: 1 hour (Sat 12–1 PM)
+- Library curation: 10–11 hours (Sat 1 PM – Sun 12 AM, with breaks)
+- Library QA: 1 hour (Sun morning)
+- Demo script writing: 1–1.5 hours (Sat evening / Sun morning)
+- Script practice & refinement: 2 hours (Sun morning / midday)
+- Final walkthrough & Q&A prep: 1–1.5 hours (Sun afternoon)
+- **Total:** ~14–15 hours focused work + some overlapping time
 
-### Overlap (Joint Work)
-- Initial planning: 2 hours
-- Data format checkin: 0.5 hours
-- Integration checkin: 0.5 hours
-- Final walkthrough: 1 hour
-- **Total:** ~4 hours of joint time
+### Valeria's Allocation (~15–17 hours)
+- Planning & setup: 1–2 hours (Sat 12–2 PM)
+- UI development (core): 10–12 hours (Sat 2 PM – Sun 12 AM)
+- Polish & QA: 2–3 hours (Sun morning)
+- Final tech check & optimization: 1–2 hours (Sun afternoon)
+- Final walkthrough: 0.5 hour (Sun afternoon)
+- **Total:** ~15–17 hours focused work
 
-**Total effort:** ~13 + 15 + 4 = ~32 person-hours for 24-clock hours (realistic for 2 people).
+### Overlapping/Joint Time
+- Initial planning: 2 hours (Sat 12–2 PM)
+- Data format check-ins: 1 hour (multiple short syncs)
+- Integration check-ins: 1 hour (multiple short syncs)
+- Final walkthrough & confidence: 1.5 hours (Sun afternoon)
+- **Total:** ~5.5 hours of joint/sync time
+
+**Reality:** ~14.5 + 16 + 5.5 = ~36 person-hours for ~29.5 clock hours (tight but realistic for motivated team).
 
 ---
 
