@@ -2,7 +2,7 @@
 
 **Event:** Music Hackspace Music Technology Hackathon, Lisbon  
 **Duration:** Saturday 12:00 PM → Sunday 5:30 PM (~29.5 hours available)  
-**Team:** Jasmine (PM/Visionary) + Valeria (Visualizer/Technologist)  
+**Team:** Jasmine (PM/Visionary) + Valerie (Visualizer/Creative Technologist)  
 **Goal:** Working prototype ready for demo at 4:00 PM Sunday, with practiced walkthrough
 
 ---
@@ -25,7 +25,7 @@
 - Demo script (3 versions: 30-sec, 60-sec, 5–7 min)
 - Final walkthrough practiced and timed
 
-### Valeria (Visualizer/Technologist)
+### Valerie (Visualizer/Technologist)
 **Primary responsibility:** UI/interaction + spatial encoding
 
 **During hackathon:**
@@ -61,7 +61,7 @@
 - Define library format (JSON structure confirmation)
 - Get first 10–20 tracks queued up for listening
 
-**Valeria:**
+**Valerie:**
 - Quick review of PRD + IMPLEMENTATION-BRIEF
 - Confirm tech stack choice (React/Vue/HTML+JS)
 - Set up dev environment (Node, build tools, GitHub repo)
@@ -75,7 +75,7 @@
 - Spatial encoding is confirmed (sketch/wireframe visible)
 - Dev environment is ready
 - Jasmine is ready to start listening
-- Valeria is ready to start building
+- Valerie is ready to start building
 
 ---
 
@@ -90,7 +90,7 @@
 - Build up JSON file as you go
 - Target: 40–50 tracks by 6:00 PM (enough for Pool Party constellation)
 
-**Valeria's Work (UI structure)**
+**Valerie's Work (UI structure)**
 - Build timeline view (shows 5 phase buttons)
 - Build constellation view shell (grid structure, zone labels)
 - Set up track data loading (reads JSON from Jasmine)
@@ -101,12 +101,12 @@
 - 2:00 PM: Both start heavy work
 - 3:00 PM: Informal checkin (no need to pause)
 - 4:00 PM: Dinner served (continue hacking while eating)
-- 5:00 PM: Quick sync (Jasmine: how many tracks? Valeria: prototype working?)
+- 5:00 PM: Quick sync (Jasmine: how many tracks? Valerie: prototype working?)
 - 6:00 PM: Checkpoint
 
 **Checkpoint (end of 6:00 PM):**
 - Jasmine: 40–50 tracks curated and tagged (enough for MVP constellation)
-- Valeria: Timeline and constellation shell working with dummy data
+- Valerie: Timeline and constellation shell working with dummy data
 - Both: Confirm data format matches (no mismatches)
 
 ---
@@ -120,7 +120,7 @@
 - Begin writing demo script outline (30-sec, 60-sec versions)
 - Take breaks (dinner available, rest eyes periodically)
 
-**Valeria's Work (Integrate real data as it arrives)**
+**Valerie's Work (Integrate real data as it arrives)**
 - As Jasmine's JSON updates come in, load tracks into constellation
 - Filter to Pool Party tracks only (40–50)
 - Position all tracks in constellation (hardcoded positions based on tags)
@@ -131,13 +131,13 @@
 
 **Timeline:**
 - 6:00 PM: Dinner served, continue hacking
-- 8:00 PM: Check-in (Jasmine: ~80 tracks? Valeria: interactions working?)
+- 8:00 PM: Check-in (Jasmine: ~80 tracks? Valerie: interactions working?)
 - 10:00 PM: Informal sync (no need to stop working)
 - 12:00 AM Sunday: Checkpoint
 
 **Checkpoint (end of Saturday, midnight):**
 - Jasmine: 100–120 tracks curated and tagged
-- Valeria: Full prototype working with real data, all core interactions functional
+- Valerie: Full prototype working with real data, all core interactions functional
 - Both: Could do a walthrough (might have some bugs, but not crashing)
 
 ---
@@ -154,7 +154,7 @@
 - Begin writing full demo script (30-sec, 60-sec, 5–7 min versions)
 - Get some sleep if possible (2–4 hours recommended)
 
-**Valeria's Work (Polish & robustness)**
+**Valerie's Work (Polish & robustness)**
 - Load final 150-track JSON once Jasmine exports it
 - Make sure all 40–50 Pool Party tracks are positioned
 - Test all interactions thoroughly
@@ -174,7 +174,7 @@
 
 **Morning Checkpoint (9:00 AM Sunday):**
 - Jasmine: Library fully curated and tagged (all 150 done)
-- Valeria: Prototype polished, interactions responsive, no crashes
+- Valerie: Prototype polished, interactions responsive, no crashes
 - Both: Ready to practice and refine
 
 ### 9:00 AM – 12:00 PM Sunday: Final Polish & Script
@@ -188,7 +188,7 @@
 - Review product talking points
 - Eat breakfast, take a walk, clear your head
 
-**Valeria's Work (Final technical polish)**
+**Valerie's Work (Final technical polish)**
 - Final QA pass: test every interaction
 - Fix any last-minute bugs (quick fixes only)
 - Optimize hover latency if needed
@@ -206,7 +206,7 @@
 
 **Checkpoint (12:00 PM, 4 hours before presentations):**
 - Jasmine: Script is practiced, timing is locked (5–7 min)
-- Valeria: Prototype is polished, no crashes, responsive
+- Valerie: Prototype is polished, no crashes, responsive
 - Both: Ready for one final full walkthrough
 
 ### 12:00 PM – 3:00 PM Sunday: Final Walkthrough & Backup
@@ -267,7 +267,7 @@
 - Final walkthrough & Q&A prep: 1–1.5 hours (Sun afternoon)
 - **Total:** ~14–15 hours focused work + some overlapping time
 
-### Valeria's Allocation (~15–17 hours)
+### Valerie's Allocation (~15–17 hours)
 - Planning & setup: 1–2 hours (Sat 12–2 PM)
 - UI development (core): 10–12 hours (Sat 2 PM – Sun 12 AM)
 - Polish & QA: 2–3 hours (Sun morning)
