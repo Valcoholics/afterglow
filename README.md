@@ -1,19 +1,20 @@
 # Afterglow: Complete Knowledge Base
 
-**Welcome.** This is everything you need to understand, build, and demo Afterglow.
+**Welcome, Jasmine & Valerie.** This is everything you need to understand, build, and demo Afterglow at the Music Hackspace hackathon in Lisbon.
 
-**For Jasmine & your teammate:** Start with the roadmap below. Read in order. Then we align on PRD and go into planning mode.
+All decisions are locked in. Your job: understand the vision, align on approach, then execute the 24-hour sprint starting tomorrow at noon.
 
 ---
 
-## 📍 You Are Here
+## 📍 Where You Are & What's Next
 
-This is a **pre-kickoff knowledge base**. Everything is decided. Your job is to understand the vision, understand the scope, align with your teammate, then build.
+**Right now (Friday evening):** Knowledge base is complete and in your hands.
 
-**Timeline:** 
-- Today: Align on PRD (read KB, discuss)
-- Tomorrow: Planning mode with Claude (structured implementation plan)
-- Next week: 24-hour sprint (build + demo)
+**Tonight/Tomorrow morning:** Each of you reads your role-specific onboarding (30 min), then you sync for 1 hour to align.
+
+**Saturday 12:00 PM:** Hack begins. Jasmine curates the library. Valerie builds the UI. You sync every 4–6 hours.
+
+**Sunday 4:00 PM:** Presentations. You demo Afterglow to the judges.
 
 ---
 
@@ -78,9 +79,9 @@ Read these in order. They build on each other.
 
 **Scope (MVP):** Pool Party constellation only. Timeline view. Track details. Real 150-track demo library. No audio, no AI, no djay integration (yet).
 
-**Team split (24-hour sprint):**
-- **Jasmine (PM/Visionary):** Curate demo library (150 real tracks), write demo script
-- **Teammate (Visualizer/Technologist):** Build UI (timeline, constellation, interactions), spatial encoding
+**Team split (29-hour sprint, Sat 12 PM → Sun 5:30 PM):**
+- **Jasmine (PM/Visionary):** Curate 150 real tracks, tag authentically, write & practice demo script
+- **Valerie (Visualizer/Technologist):** Design spatial encoding, build UI (timeline, constellation, interactions), polish & test
 
 **Success criteria:** Does it actually help a DJ prep a pool party? Is the rediscovery moment credible? Can you walk through it in 5–7 minutes without crashing?
 
@@ -96,59 +97,68 @@ You don't need to debate these. They're locked in. See `GREENLIGHT.md` for detai
 ✓ **Tagging System:** Three dimensions, nine tags (decided)  
 ✓ **Demo Scenario:** "You get asked to DJ a pool party at 4 pm"  
 ✓ **Rediscovery:** You'll find the hero track when curating the library  
-✓ **Team:** PM (you) + Visualizer/Technologist (teammate), 24-hour sprint  
+✓ **Team:** Jasmine (PM/Visionary) + Valerie (Visualizer/Technologist), 29-hour hackathon sprint  
 ✓ **Tagging Approach:** Manual (you listen, tag based on three questions)  
 ✓ **Language:** "DJ decision-making dimensions" (mandatory, not "moods")  
 ✓ **Judge Context:** Keep as reference (not a primary driver)  
 
 ---
 
-## 📄 For Alignment (Next Step)
+---
 
-Read through these together with your teammate:
+## 🔍 Your Roles & Onboarding
 
-1. **PRD.md** — Formal product requirements (what to build)
-2. **IMPLEMENTATION-BRIEF.md** — Technical details (how to build it)
-3. **24-HOUR-SPRINT.md** — The execution plan (who does what, when)
+### Jasmine (PM/Visionary)
 
-Then discuss:
-- Does this align with both your visions?
-- Are there questions or concerns?
-- Are the roles clear (PM vs. Technologist)?
+**Read first (20 min):**
+1. `00-project-overview.md` — What you're building
+2. `01-problem-and-users.md` — Why this problem matters
+3. `02-core-concept.md` — How the three-layer model works
+4. `06-demo-story.md` — How you'll pitch it
 
-Once aligned → planning mode with Claude.
+**Your responsibilities (Saturday → Sunday):**
+- Curate 150 real Creative Commons tracks (10–11 hours)
+- Tag each track using three questions: When? Why? What crowd?
+- Identify the hero rediscovery track (emerges during curation)
+- Write demo script (30-sec, 60-sec, 5–7 min versions)
+- Practice script and land the emotional moments
+- Own the demo narrative and judge engagement
+
+**Key mindset:** You're the voice of the DJ. Every track, every tag, every choice reflects authentic DJ thinking.
 
 ---
 
-## 🔍 For Different Roles
+### Valerie (Visualizer/Creative Technologist)
 
-### If You're the Product Manager / Visionary
+**Read first (20 min):**
+1. `00-project-overview.md` — What you're building
+2. `02-core-concept.md` — The three-layer model
+3. `04-ux-and-spatial-interaction.md` — Spatial design & interaction
+4. `05-mvp-and-scope.md` — What's in/out
 
-**Read first:**
-1. `00-project-overview.md`
-2. `01-problem-and-users.md`
-3. `02-core-concept.md`
-4. `06-demo-story.md`
+**Your responsibilities (Saturday → Sunday):**
+- Design spatial encoding (confirm X/Y/color mapping)
+- Build timeline view (2–3 hours)
+- Build constellation view shell (4–6 hours)
+- Implement hover interaction & track details (4–5 hours)
+- Polish and optimize (<100ms hover latency)
+- Ensure no crashes during demo
 
-**Key responsibilities:**
-- Understand the DJ problem deeply (read 01)
-- Own the demo narrative (read 06)
-- Curate the track library (manual; you listen)
-- Make product decisions during build
+**Key mindset:** You're building the stage for DJ thinking. Every interaction should feel intentional and responsive.
 
-### If You're the Visualizer / Creative Technologist
+---
 
-**Read first:**
-1. `00-project-overview.md`
-2. `02-core-concept.md`
-3. `04-ux-and-spatial-interaction.md`
-4. `05-mvp-and-scope.md`
+## 📋 Next: Alignment Meeting (1 hour, both of you)
 
-**Key responsibilities:**
-- Understand the three-layer model (read 02)
-- Understand spatial design approach (read 04)
-- Design spatial encoding (X-axis, Y-axis, color)
-- Build the prototype (24-hour sprint)
+Before coding starts:
+1. Both finish your role-specific reads
+2. Read PRD.md and IMPLEMENTATION-BRIEF.md together
+3. Discuss: What's your tech stack? (React/Vue/HTML+JS?)
+4. Discuss: Any questions or concerns?
+5. Review 24-HOUR-SPRINT.md to confirm the timeline feels realistic
+6. Sync on: How will you communicate during the sprint? (Slack? Discord? Check-ins every 4 hours?)
+
+Then → you're ready to build.
 
 ---
 
@@ -214,15 +224,32 @@ If yes → you're ready.
 
 ---
 
-## 🚀 Next Moves
+## 🚀 Timeline (Tonight Through Sunday)
 
-1. **Today:** Both read the 7-file roadmap (30 min)
-2. **Today:** Discuss PRD + IMPLEMENTATION-BRIEF (1 hour)
-3. **Align:** Are you both on the same page?
-4. **Tomorrow:** Planning mode with Claude (2 hours)
-5. **Planning output:** Detailed implementation plan, task breakdown, technical decisions
-6. **Next week:** 24-hour sprint (build it)
-7. **End of sprint:** Demo ready for judges
+**Tonight (Friday evening):**
+- Jasmine: Read your onboarding (20 min) + PRD.md (15 min)
+- Valerie: Read your onboarding (20 min) + IMPLEMENTATION-BRIEF.md (20 min)
+- Both: Get rest before early Saturday
+
+**Saturday morning (before 12 PM):**
+- Jasmine: Have Creative Commons music sources identified
+- Valerie: Have dev environment ready (Node, tech stack decided)
+- Meet at hackathon, team formation at 11:30 AM
+
+**Saturday 12:00 PM – Sunday 5:30 PM:**
+- Follow 24-HOUR-SPRINT.md timeline
+- Jasmine: Library curation (Sat 2 PM → Sun morning)
+- Valerie: UI build (Sat 2 PM → Sun afternoon)
+- Check-ins: Every 4–6 hours (informal syncs)
+
+**Sunday 3:00 PM – 4:00 PM:**
+- Final walkthrough with prototype
+- Jasmine: Practice script one more time
+- Valerie: Final tech check
+- Head to stage at 3:30 PM
+
+**Sunday 4:00 PM:**
+- Demo time. You've got this. 🎵
 
 ---
 
@@ -237,16 +264,28 @@ If yes → you're ready.
 
 ---
 
-## 💡 One Final Thing
+## 💡 Final Words
 
-The concept is solid. The scope is realistic. The problem is real.
+**The concept is solid.** You're solving a real DJ problem that matters.
 
-Your job isn't to reinvent it. It's to build it well and tell the story clearly.
+**The scope is realistic.** Pool Party only. 150 real tracks. One beautifully built constellation. No vaporware.
 
-Read the KB. Align with your teammate. Plan thoughtfully. Build fast.
+**Your execution matters.** You'll be building in parallel, syncing frequently, and shipping something real in 29 hours. That's tight but doable if you stay focused.
 
-You've got this. 🎵
+**What judges will remember:** Not the polish. Not the technology. They'll remember whether you genuinely understand the problem and respect the people you're building for.
+
+Jasmine, your job is to bring authentic DJ thinking to every tag and every decision. Valerie, your job is to make the interaction feel responsive and intentional.
+
+Together, you're telling a story about DJ artistry and agency. Make it real.
 
 ---
 
-**Start with:** `00-project-overview.md` (5 minutes)
+## 🎵 Right Now
+
+**Jasmine:** Start with `00-project-overview.md` (5 min), then `01-problem-and-users.md`
+
+**Valerie:** Start with `00-project-overview.md` (5 min), then `04-ux-and-spatial-interaction.md`
+
+Then meet up, discuss, and get some rest before Saturday.
+
+You've got this. 🎵
