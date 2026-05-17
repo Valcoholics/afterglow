@@ -215,7 +215,7 @@ export default function ForceGraph({
   // Mirror the selected id into a ref the draw loop can read. This effect
   // ONLY touches its own ref (not the mount effect's sim/redraw refs), so
   // it doesn't trip the cross-effect ref linter. Repaint on click is done
-  // inline in onUp; the sim's ticks cover the rest.
+  // inline in the drag "end" handler; the sim's ticks cover the rest.
   const selectedRef = useRef<number | null>(selectedId ?? null);
   useEffect(() => {
     selectedRef.current = selectedId ?? null;
@@ -498,7 +498,15 @@ export default function ForceGraph({
     canvas.addEventListener("mousemove", onMove);
     canvas.addEventListener("mouseleave", onLeave);
 
-    // ── Drag (d3-drag) — pin while dragging, reheat the sim ───────
+    // ── Drag + click (d3-drag owns BOTH) ─────────────────────────
+    // d3-drag captures mousedown and preventDefaults it, so separate
+    // native mousedown/mouseup click listeners get swallowed (that was
+    // the "click does nothing" bug). The canonical d3 fix: detect the
+    // click INSIDE the drag lifecycle — a press+release on the same
+    // subject node with negligible movement is a click → open detail.
+    let pressX = 0;
+    let pressY = 0;
+    let moved = 0;
     const dragBehavior = d3drag<HTMLCanvasElement, unknown>()
       .container(canvas)
       .subject((event) => {
@@ -507,6 +515,9 @@ export default function ForceGraph({
       })
       .on("start", (event) => {
         if (!event.subject) return;
+        pressX = event.x;
+        pressY = event.y;
+        moved = 0;
         if (!event.active) sim.alphaTarget(0.3).restart();
         const s = event.subject as GNode;
         s.fx = s.x;
@@ -514,39 +525,24 @@ export default function ForceGraph({
       })
       .on("drag", (event) => {
         const s = event.subject as GNode;
-        const { x, y } = toLocal(event.sourceEvent.clientX, event.sourceEvent.clientY);
-        s.fx = x;
-        s.fy = y;
+        moved = Math.hypot(event.x - pressX, event.y - pressY);
+        s.fx = event.x;
+        s.fy = event.y;
       })
       .on("end", (event) => {
         if (!event.active) sim.alphaTarget(0);
         const s = event.subject as GNode;
         s.fx = null;
         s.fy = null;
+        // Barely moved → it was a click, not a drag. Open the detail
+        // panel for that node + set the sticky selection ring/focus.
+        if (moved <= 5 && s) {
+          selectedRef.current = s.track.id;
+          onSelectRef.current(s.track);
+          draw();
+        }
       });
     select(canvas).call(dragBehavior);
-
-    // Click to open detail (distinguish from drag: only if barely moved).
-    let downAt: { x: number; y: number } | null = null;
-    const onDown = (e: MouseEvent) =>
-      (downAt = toLocal(e.clientX, e.clientY));
-    const onUp = (e: MouseEvent) => {
-      if (!downAt) return;
-      const { x, y } = toLocal(e.clientX, e.clientY);
-      const moved = Math.hypot(x - downAt.x, y - downAt.y);
-      downAt = null;
-      if (moved > 5) return; // it was a drag
-      const hit = nodeAt(x, y);
-      if (hit) {
-        // Reflect selection immediately (ring + sticky focus) without
-        // waiting for the prop round-trip — repaint even if settled.
-        selectedRef.current = hit.track.id;
-        onSelectRef.current(hit.track);
-        draw();
-      }
-    };
-    canvas.addEventListener("mousedown", onDown);
-    canvas.addEventListener("mouseup", onUp);
 
     const onResize = () => {
       sizeCanvas();
@@ -566,8 +562,6 @@ export default function ForceGraph({
       redrawRef.current = null;
       canvas.removeEventListener("mousemove", onMove);
       canvas.removeEventListener("mouseleave", onLeave);
-      canvas.removeEventListener("mousedown", onDown);
-      canvas.removeEventListener("mouseup", onUp);
       window.removeEventListener("resize", onResize);
       select(canvas).on(".drag", null);
     };
