@@ -1,0 +1,19 @@
+context,id,artist,title,x_norm,y_norm,z_norm,x_role_0_3,y_crowd_0_2,z_fit_0_10,membership,dominant_context,mean_confidence,bpm,key,duration,genre
+warm-up,1,"DJ Tennis, Joseph Ashworth, LP Giobbi",All In A Dream feat. DJ Tennis feat. Joseph Ashworth (Extended Mix),0.3333,0,0.8,1,0,8,core,afterglow,8.333,120.00,7A,06:08,Melodic House & Techno
+warm-up,8,"Todd Terry, A-Trak",DJs Gotta Dance More feat. Todd Terry (Extended),0,0,0.8,0,0,8,core,afterglow,8.333,120.00,10A,04:44,House
+warm-up,11,Climbers,Equal Responsibility (Betoko Remix),0.3333,0.5,0.7,1,1,7,edge,afterglow,8.167,120.00,12A,07:36,Deep House
+warm-up,15,Stereoclip,Feel The Game (Extended Remix),0.3333,0.5,0.8,1,1,8,core,pool-party,8,125.00,1A,05:31,Melodic House & Techno
+warm-up,20,Texture,Hit The Ground  (Extended Mix),0.3333,0.5,0.8,1,1,8,core,sunrise-reset,8,122.00,6A,04:00,House
+warm-up,25,"Fred Falke, Elohim, Mansions on the Moon",It's A Memory (Amtrac Remix),0.5,0.25,0.8,1.5,0.5,8,core,afterglow,8.429,124.00,2A,06:47,Electronica
+warm-up,26,"Dusky, Janai",It's Not Enough feat. Janai (Original Mix),0.3333,0.5,0.8,1,1,8,core,afterglow,8.143,123.00,4A,06:49,Deep House
+warm-up,28,"Bantwanas, Khonaye",Izolo feat. Khonaye (Lost Desert & Lee Burridge Remix),0.3333,0.5,0.8,1,1,8,core,sunrise-reset,8.143,120.00,9A,08:24,Organic House / Downtempo
+warm-up,29,The Dead Rose Music Company,Just a Bitter Love,0.4444,0.4375,0.8,1.3333,0.875,8,core,afterglow,8.571,109.33,6A,07:55,House
+warm-up,31,Frank Ocean,Lost,0.4706,0.5,0.8,1.4118,1,8,core,afterglow,8.429,123.00,6A,03:54,Pop
+warm-up,32,"Joi Cardwell, Jon Dasilva, Maceo Plex",Love Somebody Else Feat. Joi Cardwell (Original Mix),0.3333,0.5,0.8,1,1,8,core,afterglow,9,123.00,12B,08:18,Deep House
+warm-up,33,Marcus Worgull,Love Song (Original Mix),0.3333,0.5,0.8,1,1,8,core,afterglow,8.167,124.00,8A,06:27,Indie Dance
+warm-up,34,CIOZ,Lucky Shot (Original Mix),0.1765,0.25,0.6,0.5294,0.5,6,edge,afterglow,8,122.00,7A,08:14,Deep House
+warm-up,41,Eli & Fur,Night Blooming Jasmine (Original Mix),0.3333,0.5,0.7,1,1,7,edge,afterglow,8.4,120.00,4A,03:46,Deep House
+warm-up,60,"Agoria, Rami Khalife, Noémie",Teardrops (Don't Stop The Music) (Original Mix),0.3333,0.5,0.7,1,1,7,edge,afterglow,7.875,124.00,5B,06:09,Melodic House & Techno
+warm-up,66,Eli & Fur,Walk The Line (Extended Mix),0.3333,0.5,0.8,1,1,8,core,sunrise-reset,8,123.00,9A,04:56,Melodic House & Techno
+warm-up,68,Mario Basanov,We Are Child Of Love (The Mekanism Remix),0.1667,0.25,0.8,0.5,0.5,8,core,afterglow,8,120.00,12A,06:25,Deep House
+warm-up,72,J. Koen,Where the Subtle Meets Infinity (Original Mix),0.6667,0.5,0.8,2,1,8,core,festival-brunch,8,123.00,1A,05:47,Deep House

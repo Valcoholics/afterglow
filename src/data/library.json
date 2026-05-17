@@ -1,0 +1,2986 @@
+{
+  "tracks": [
+    {
+      "id": 1,
+      "artist": "DJ Tennis, Joseph Ashworth, LP Giobbi",
+      "title": "All In A Dream feat. DJ Tennis feat. Joseph Ashworth (Extended Mix)",
+      "duration": "06:08",
+      "genre": "Melodic House & Techno",
+      "bpm": "120.00",
+      "key": "7A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "artist": "Andre Nickatina",
+      "title": "Ayo for Yayo (feat. San Quinn)",
+      "duration": "03:14",
+      "genre": "Hip-Hop/Rap",
+      "bpm": "128.48",
+      "key": "10A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "artist": "Disclosure",
+      "title": "Boiling (feat. Sinead Harnett)",
+      "duration": "03:46",
+      "genre": "Electronic",
+      "bpm": "128.00",
+      "key": "11A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 6
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 7
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "artist": "Sucre Sale",
+      "title": "Bye Bye Les Fraises feat. Sashe (Heinrichs & Hirtenfellner Remix)",
+      "duration": "07:43",
+      "genre": "Tech House",
+      "bpm": "123.00",
+      "key": "3A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 7
+          },
+          {
+            "value": "wanderers",
+            "confidence": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "artist": "Shimza, Mikhaela Faye",
+      "title": "Calling Out Your Name (Original Mix)",
+      "duration": "07:01",
+      "genre": "Afro House",
+      "bpm": "123.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 7
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "artist": "Caribou",
+      "title": "Can't Do Without You (Tale Of Us & Mano Le Tough Remix)",
+      "duration": "07:37",
+      "genre": "Electronica",
+      "bpm": "128.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "artist": "Monique Bingham, Black Coffee",
+      "title": "Deep in the Bottom (of Africa)",
+      "duration": "06:33",
+      "genre": "Afro House",
+      "bpm": "128.00",
+      "key": "5A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "artist": "Todd Terry, A-Trak",
+      "title": "DJs Gotta Dance More feat. Todd Terry (Extended)",
+      "duration": "04:44",
+      "genre": "House",
+      "bpm": "120.00",
+      "key": "10A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "warm-up",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "artist": "rusowsky & Ralphie Choo",
+      "title": "Dolores",
+      "duration": "03:38",
+      "genre": "Pop",
+      "bpm": "122.00",
+      "key": "10A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "artist": "40 Thieves",
+      "title": "Don’t Turn It Off feat. Qzen (Session Victim Extended Remix)",
+      "duration": "06:47",
+      "genre": "",
+      "bpm": "124.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "pool-party",
+            "confidence": 7
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          },
+          {
+            "value": "opener",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "artist": "Climbers",
+      "title": "Equal Responsibility (Betoko Remix)",
+      "duration": "07:36",
+      "genre": "Deep House",
+      "bpm": "120.00",
+      "key": "12A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "warm-up",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "artist": "Kaskade, deadmau5, Kx5",
+      "title": "Escape feat. Hayla (Extended Mix)",
+      "duration": "05:14",
+      "genre": "Dance / Pop",
+      "bpm": "126.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 6
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "club",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "artist": "Charlotte Cardin, RUSH AVENUE",
+      "title": "Feel Good (feat. Charlotte Cardin) [Remix] (feat. Charlotte Cardin)",
+      "duration": "03:28",
+      "genre": "Afro House",
+      "bpm": "120.00",
+      "key": "11A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "artist": "Eli & Fur",
+      "title": "Feel The Fire (Journeyman Remix)",
+      "duration": "06:27",
+      "genre": "Deep House",
+      "bpm": "120.00",
+      "key": "7A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 9
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "artist": "Stereoclip",
+      "title": "Feel The Game (Extended Remix)",
+      "duration": "05:31",
+      "genre": "Melodic House & Techno",
+      "bpm": "125.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "artist": "Oliver Koletzki, Jake The Rapper",
+      "title": "Fifty Ways To Love Your Liver (Original Mix)",
+      "duration": "05:04",
+      "genre": "Deep House",
+      "bpm": "105.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "artist": "Midland",
+      "title": "Final Credits (Original Mix)",
+      "duration": "07:20",
+      "genre": "House",
+      "bpm": "133.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 7
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 10
+          },
+          {
+            "value": "bridge",
+            "confidence": 7
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 7
+          },
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "artist": "Daft Punk",
+      "title": "Give Life Back to Music (Original Mix)",
+      "duration": "04:35",
+      "genre": "Dance / Pop",
+      "bpm": "119.05",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          },
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "artist": "Glass Animals",
+      "title": "Gooey (Original Mix)",
+      "duration": "04:49",
+      "genre": "Dance / Pop",
+      "bpm": "91.50",
+      "key": "10A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "artist": "Texture",
+      "title": "Hit The Ground  (Extended Mix)",
+      "duration": "04:00",
+      "genre": "House",
+      "bpm": "122.00",
+      "key": "6A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 7
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "artist": "Dua Lipa",
+      "title": "Houdini (Adam Port Mix)",
+      "duration": "03:22",
+      "genre": "Dance / Pop",
+      "bpm": "119.00",
+      "key": "6A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "artist": "Kaskade, deadmau5",
+      "title": "I Remember (Original Mix)",
+      "duration": "09:07",
+      "genre": "Dance / Pop",
+      "bpm": "128.00",
+      "key": "10A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "wanderers",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "artist": "Quantic",
+      "title": "I Won't Fade Away feat. Alice Russell (Original Mix)",
+      "duration": "03:48",
+      "genre": "UK Garage / Bassline",
+      "bpm": "125.00",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          },
+          {
+            "value": "arrivals",
+            "confidence": 7
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "artist": "Hana",
+      "title": "Illusory (Extended Mix)",
+      "duration": "05:59",
+      "genre": "Melodic House & Techno",
+      "bpm": "132.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 7
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "artist": "Fred Falke, Elohim, Mansions on the Moon",
+      "title": "It's A Memory (Amtrac Remix)",
+      "duration": "06:47",
+      "genre": "Electronica",
+      "bpm": "124.00",
+      "key": "2A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "artist": "Dusky, Janai",
+      "title": "It's Not Enough feat. Janai (Original Mix)",
+      "duration": "06:49",
+      "genre": "Deep House",
+      "bpm": "123.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "artist": "Emanuele Esposito, Gianni Romano",
+      "title": "It's Not Right (Original Mix)",
+      "duration": "06:22",
+      "genre": "Afro House",
+      "bpm": "123.00",
+      "key": "5A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "artist": "Bantwanas, Khonaye",
+      "title": "Izolo feat. Khonaye (Lost Desert & Lee Burridge Remix)",
+      "duration": "08:24",
+      "genre": "Organic House / Downtempo",
+      "bpm": "120.00",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "artist": "The Dead Rose Music Company",
+      "title": "Just a Bitter Love",
+      "duration": "07:55",
+      "genre": "House",
+      "bpm": "109.33",
+      "key": "6A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 10
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "artist": "Sam Smith, Disclosure",
+      "title": "Latch (Jamie Jones Remix)",
+      "duration": "06:31",
+      "genre": "Electronica",
+      "bpm": "123.00",
+      "key": "4B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "artist": "Frank Ocean",
+      "title": "Lost",
+      "duration": "03:54",
+      "genre": "Pop",
+      "bpm": "123.00",
+      "key": "6A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "artist": "Joi Cardwell, Jon Dasilva, Maceo Plex",
+      "title": "Love Somebody Else Feat. Joi Cardwell (Original Mix)",
+      "duration": "08:18",
+      "genre": "Deep House",
+      "bpm": "123.00",
+      "key": "12B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "artist": "Marcus Worgull",
+      "title": "Love Song (Original Mix)",
+      "duration": "06:27",
+      "genre": "Indie Dance",
+      "bpm": "124.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "artist": "CIOZ",
+      "title": "Lucky Shot (Original Mix)",
+      "duration": "08:14",
+      "genre": "Deep House",
+      "bpm": "122.00",
+      "key": "7A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 6
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "opener",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "artist": "FKJ",
+      "title": "Lying Together",
+      "duration": "04:28",
+      "genre": "",
+      "bpm": "102.00",
+      "key": "2A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "artist": "Chrome Sparks",
+      "title": "Marijuana (Original Mix)",
+      "duration": "03:01",
+      "genre": "Electronica",
+      "bpm": "87.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "artist": "Floyd Lavine",
+      "title": "Masala (Pablo Fierro Remix)",
+      "duration": "06:58",
+      "genre": "Afro House",
+      "bpm": "125.00",
+      "key": "7A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 8
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "artist": "Maribou State, Holly Walker",
+      "title": "Midas feat. Holly Walker (Ben Pearce Re-Edit)",
+      "duration": "06:05",
+      "genre": "Electronica",
+      "bpm": "120.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "wanderers",
+            "confidence": 9
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "artist": "Solomun",
+      "title": "Never Sleep Again (Keinemusik Remix)",
+      "duration": "07:12",
+      "genre": "Melodic House & Techno",
+      "bpm": "120.00",
+      "key": "6A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 7
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "artist": "Justice, Tame Impala",
+      "title": "Neverender (Extended)",
+      "duration": "06:43",
+      "genre": "Indie Dance",
+      "bpm": "119.00",
+      "key": "11A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "artist": "Eli & Fur",
+      "title": "Night Blooming Jasmine (Original Mix)",
+      "duration": "03:46",
+      "genre": "Deep House",
+      "bpm": "120.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 7
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "artist": "Eli & Fur",
+      "title": "Night Blooming Jasmine (Rodriguez Jr. Remix)",
+      "duration": "06:10",
+      "genre": "Melodic House & Techno",
+      "bpm": "120.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 10
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "artist": "Duke Dumont",
+      "title": "Ocean Drive (Extended Mix)",
+      "duration": "04:39",
+      "genre": "Dance / Pop",
+      "bpm": "115.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 9
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "artist": "Justice, Tame Impala",
+      "title": "One Night/All Night (Original Mix)",
+      "duration": "04:36",
+      "genre": "Dance / Pop",
+      "bpm": "116.13",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "artist": "Bicep",
+      "title": "Opal (Four Tet Remix)",
+      "duration": "08:14",
+      "genre": "Deep House",
+      "bpm": "127.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 7
+          },
+          {
+            "value": "lock-in",
+            "confidence": 7
+          },
+          {
+            "value": "wanderers",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "artist": "Stereoclip, DIM KELLY",
+      "title": "Preach The World (Original Mix)",
+      "duration": "05:17",
+      "genre": "Organic House / Downtempo",
+      "bpm": "122.00",
+      "key": "12A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          },
+          {
+            "value": "bridge",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "artist": "Alex Virgo",
+      "title": "Promiscuous [AV Edit]",
+      "duration": "05:36",
+      "genre": "",
+      "bpm": "126.00",
+      "key": "3A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 10
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "artist": "Warren G",
+      "title": "Regulate (feat. Nate Dogg)",
+      "duration": "04:08",
+      "genre": "Hip-Hop/Rap",
+      "bpm": "95.41",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "artist": "Nina Carr, Effemar",
+      "title": "Saturday Night (Extended)",
+      "duration": "05:10",
+      "genre": "Dance / Pop",
+      "bpm": "123.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          },
+          {
+            "value": "wanderers",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "artist": "Bobbi Fallon, Animalic Drum",
+      "title": "Sell My Heart (Kreative Nativez Remix)",
+      "duration": "07:01",
+      "genre": "Afro House",
+      "bpm": "123.00",
+      "key": "11A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "wanderers",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "artist": "Ash",
+      "title": "Sing It Back (feat. Naila) (Original Mix)",
+      "duration": "04:12",
+      "genre": "Electronica",
+      "bpm": "120.00",
+      "key": "12A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 10
+          },
+          {
+            "value": "reset",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "artist": "Moloko",
+      "title": "Sing It Back (Herbert's Tasteful Dub)",
+      "duration": "05:59",
+      "genre": "House",
+      "bpm": "123.42",
+      "key": "2A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "artist": "Kidnap",
+      "title": "Skin (Rinzen Remix)",
+      "duration": "07:30",
+      "genre": "Melodic House & Techno",
+      "bpm": "123.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "wanderers",
+            "confidence": 9
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "artist": "Maverick Sabre, Jorja Smith",
+      "title": "Slow Down (James Cole Remix)",
+      "duration": "06:58",
+      "genre": "Deep House",
+      "bpm": "126.00",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "wanderers",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "artist": "Overmono",
+      "title": "So U Kno (Original Mix)",
+      "duration": "05:43",
+      "genre": "Dance / Pop",
+      "bpm": "130.00",
+      "key": "4A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "late-night-warehouse",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 7
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "artist": "Royksopp",
+      "title": "Sordid Affair (Maceo Plex Mix)",
+      "duration": "07:58",
+      "genre": "Tech House",
+      "bpm": "123.00",
+      "key": "3A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 10
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          },
+          {
+            "value": "arrivals",
+            "confidence": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "artist": "TENSHU",
+      "title": "Stones Throw (Original Mix)",
+      "duration": "05:13",
+      "genre": "UK Garage / Bassline",
+      "bpm": "126.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 7
+          },
+          {
+            "value": "pool-party",
+            "confidence": 7
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "artist": "Stereoclip",
+      "title": "Sunset Drive (Extended Mix)",
+      "duration": "07:13",
+      "genre": "Melodic House & Techno",
+      "bpm": "125.00",
+      "key": "5A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 8
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 10
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "artist": "Verboten Berlin",
+      "title": "Symmetry (Rodriguez Jr. Remix)",
+      "duration": "06:13",
+      "genre": "Deep House",
+      "bpm": "120.50",
+      "key": "11A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 7
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "artist": "Agoria, Rami Khalife, Noémie",
+      "title": "Teardrops (Don't Stop The Music) (Original Mix)",
+      "duration": "06:09",
+      "genre": "Melodic House & Techno",
+      "bpm": "124.00",
+      "key": "5B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "warm-up",
+            "confidence": 7
+          },
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 7
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 7
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "artist": "Bob Moses",
+      "title": "Tearing Me Up (Original Mix)",
+      "duration": "07:50",
+      "genre": "Dance / Electro Pop",
+      "bpm": "115.00",
+      "key": "7A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 9
+          },
+          {
+            "value": "opener",
+            "confidence": 7
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "artist": "Outkast, Sleepy Brown",
+      "title": "The Way You Move (Original Mix)",
+      "duration": "03:54",
+      "genre": "Trap / Future Bass",
+      "bpm": "126.00",
+      "key": "5A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 9
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "artist": "Perrez",
+      "title": "There's Never Been (No One Like You)(P's Sunrise Edit)",
+      "duration": "05:42",
+      "genre": "",
+      "bpm": "117.72",
+      "key": "10B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 9
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "artist": "Shura",
+      "title": "Touch (Four Tet Remix)",
+      "duration": "04:35",
+      "genre": "Electronica",
+      "bpm": "122.00",
+      "key": "8B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "artist": "Radiohead",
+      "title": "Videotape (Original Mix)",
+      "duration": "04:42",
+      "genre": "Electronica",
+      "bpm": "154.77",
+      "key": "12A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "artist": "Eli & Fur",
+      "title": "Walk The Line (Extended Mix)",
+      "duration": "04:56",
+      "genre": "Melodic House & Techno",
+      "bpm": "123.00",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 7
+          },
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "festival-brunch",
+            "confidence": 6
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "artist": "Eli & Fur",
+      "title": "Walk The Line (Themba Extended Mix)",
+      "duration": "06:21",
+      "genre": "Melodic House & Techno",
+      "bpm": "122.00",
+      "key": "9A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "home-stretch",
+            "confidence": 9
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "artist": "Mario Basanov",
+      "title": "We Are Child Of Love (The Mekanism Remix)",
+      "duration": "06:25",
+      "genre": "Deep House",
+      "bpm": "120.00",
+      "key": "12A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "warm-up",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "opener",
+            "confidence": 8
+          },
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          },
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "artist": "Portrait",
+      "title": "What Can I Do",
+      "duration": "02:25",
+      "genre": "",
+      "bpm": "122.00",
+      "key": "8A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "artist": "Ben Pearce",
+      "title": "What I Might Do",
+      "duration": "03:14",
+      "genre": "Dance",
+      "bpm": "122.00",
+      "key": "5A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "pool-party",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "artist": "Shakka",
+      "title": "When Will I See You Again (Amtrac Remix)",
+      "duration": "06:31",
+      "genre": "Nu Disco / Disco",
+      "bpm": "125.00",
+      "key": "5B",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 10
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "home-stretch",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "lock-in",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "artist": "J. Koen",
+      "title": "Where the Subtle Meets Infinity (Original Mix)",
+      "duration": "05:47",
+      "genre": "Deep House",
+      "bpm": "123.00",
+      "key": "1A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "festival-brunch",
+            "confidence": 8
+          },
+          {
+            "value": "pool-party",
+            "confidence": 8
+          },
+          {
+            "value": "warm-up",
+            "confidence": 8
+          },
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 8
+          }
+        ],
+        "role": [
+          {
+            "value": "reset",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "wanderers",
+            "confidence": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "artist": "Nico de Andrea",
+      "title": "Wish We Could feat. Syon & Darla Jade (Extended Mix)",
+      "duration": "05:26",
+      "genre": "House",
+      "bpm": "120.00",
+      "key": "3A",
+      "playCount": 0,
+      "tags": {
+        "time": [
+          {
+            "value": "afterglow",
+            "confidence": 8
+          },
+          {
+            "value": "sunrise-reset",
+            "confidence": 9
+          }
+        ],
+        "role": [
+          {
+            "value": "bridge",
+            "confidence": 9
+          },
+          {
+            "value": "opener",
+            "confidence": 8
+          }
+        ],
+        "crowd": [
+          {
+            "value": "arrivals",
+            "confidence": 8
+          },
+          {
+            "value": "lock-in",
+            "confidence": 8
+          }
+        ]
+      }
+    }
+  ]
+}

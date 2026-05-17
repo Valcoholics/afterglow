@@ -1,0 +1,31 @@
+context,id,artist,title,x_norm,y_norm,z_norm,x_role_0_3,y_crowd_0_2,z_fit_0_10,membership,dominant_context,mean_confidence,bpm,key,duration,genre
+pool-party,3,Disclosure,Boiling (feat. Sinead Harnett),0.3182,0.5,0.8,0.9545,1,8,core,afterglow,7.625,128.00,11A,03:46,Electronic
+pool-party,8,"Todd Terry, A-Trak",DJs Gotta Dance More feat. Todd Terry (Extended),0,0,0.8,0,0,8,core,afterglow,8.333,120.00,10A,04:44,House
+pool-party,10,40 Thieves,Don’t Turn It Off feat. Qzen (Session Victim Extended Remix),0.5,0.5,0.7,1.5,1,7,edge,afterglow,8,124.00,8A,06:47,
+pool-party,12,"Kaskade, deadmau5, Kx5",Escape feat. Hayla (Extended Mix),0.6863,0.5,0.6,2.0588,1,6,edge,afterglow,7.833,126.00,8A,05:14,Dance / Pop
+pool-party,13,"Charlotte Cardin, RUSH AVENUE",Feel Good (feat. Charlotte Cardin) [Remix] (feat. Charlotte Cardin),0.3333,0.5,0.7,1,1,7,edge,afterglow,7.6,120.00,11A,03:28,Afro House
+pool-party,15,Stereoclip,Feel The Game (Extended Remix),0.3333,0.5,0.8,1,1,8,core,pool-party,8,125.00,1A,05:31,Melodic House & Techno
+pool-party,17,Midland,Final Credits (Original Mix),0.7083,0.2813,0.7,2.125,0.5625,7,edge,afterglow,8.125,133.00,4A,07:20,House
+pool-party,18,Daft Punk,Give Life Back to Music (Original Mix),0.5467,0.2778,0.8,1.64,0.5556,8,core,afterglow,8.714,119.05,8A,04:35,Dance / Pop
+pool-party,20,Texture,Hit The Ground  (Extended Mix),0.3333,0.5,0.8,1,1,8,core,sunrise-reset,8,122.00,6A,04:00,House
+pool-party,22,"Kaskade, deadmau5",I Remember (Original Mix),0.6863,0.7353,0.8,2.0588,1.4706,8,core,afterglow,8.429,128.00,10A,09:07,Dance / Pop
+pool-party,24,Hana,Illusory (Extended Mix),0.6667,0.5333,0.8,2,1.0667,8,core,afterglow,7.667,132.00,1A,05:59,Melodic House & Techno
+pool-party,25,"Fred Falke, Elohim, Mansions on the Moon",It's A Memory (Amtrac Remix),0.5,0.25,0.8,1.5,0.5,8,core,afterglow,8.429,124.00,2A,06:47,Electronica
+pool-party,29,The Dead Rose Music Company,Just a Bitter Love,0.4444,0.4375,0.8,1.3333,0.875,8,core,afterglow,8.571,109.33,6A,07:55,House
+pool-party,32,"Joi Cardwell, Jon Dasilva, Maceo Plex",Love Somebody Else Feat. Joi Cardwell (Original Mix),0.3333,0.5,0.8,1,1,8,core,afterglow,9,123.00,12B,08:18,Deep House
+pool-party,35,FKJ,Lying Together,0.4706,0,0.8,1.4118,0,8,core,sunrise-reset,8.833,102.00,2A,04:28,
+pool-party,37,Floyd Lavine,Masala (Pablo Fierro Remix),0.6863,0.5,0.8,2.0588,1,8,core,sunrise-reset,8.5,125.00,7A,06:58,Afro House
+pool-party,39,Solomun,Never Sleep Again (Keinemusik Remix),0.3333,0.2333,0.8,1,0.4667,8,core,sunrise-reset,8.167,120.00,6A,07:12,Melodic House & Techno
+pool-party,40,"Justice, Tame Impala",Neverender (Extended),1,0.5,0.8,3,1,8,core,sunrise-reset,8.6,119.00,11A,06:43,Indie Dance
+pool-party,43,Duke Dumont,Ocean Drive (Extended Mix),0.3333,0.5,0.9,1,1,9,core,pool-party,8.75,115.00,1A,04:39,Dance / Pop
+pool-party,46,"Stereoclip, DIM KELLY",Preach The World (Original Mix),0.7083,0.2647,0.8,2.125,0.5294,8,core,sunrise-reset,8.429,122.00,12A,05:17,Organic House / Downtempo
+pool-party,47,Alex Virgo,Promiscuous [AV Edit],0.3333,0.5,0.8,1,1,8,core,afterglow,9.5,126.00,3A,05:36,
+pool-party,54,"Maverick Sabre, Jorja Smith",Slow Down (James Cole Remix),0.3333,0.75,0.8,1,1.5,8,core,afterglow,8.333,126.00,9A,06:58,Deep House
+pool-party,56,Royksopp,Sordid Affair (Maceo Plex Mix),0.3333,0.2941,0.8,1,0.5882,8,core,sunrise-reset,8.667,123.00,3A,07:58,Tech House
+pool-party,57,TENSHU,Stones Throw (Original Mix),0.3333,0.5,0.7,1,1,7,edge,afterglow,8,126.00,8A,05:13,UK Garage / Bassline
+pool-party,62,"Outkast, Sleepy Brown",The Way You Move (Original Mix),0.6667,0.5,0.9,2,1,9,core,pool-party,8.833,126.00,5A,03:54,Trap / Future Bass
+pool-party,63,Perrez,There's Never Been (No One Like You)(P's Sunrise Edit),0.3333,0.5,0.9,1,1,9,core,pool-party,8.25,117.72,10B,05:42,
+pool-party,66,Eli & Fur,Walk The Line (Extended Mix),0.3333,0.5,0.7,1,1,7,edge,sunrise-reset,8,123.00,9A,04:56,Melodic House & Techno
+pool-party,69,Portrait,What Can I Do,0.3333,0,0.8,1,0,8,core,pool-party,8,122.00,8A,02:25,
+pool-party,70,Ben Pearce,What I Might Do,0.6471,0.5,0.9,1.9412,1,9,core,afterglow,9.2,122.00,5A,03:14,Dance
+pool-party,72,J. Koen,Where the Subtle Meets Infinity (Original Mix),0.6667,0.5,0.8,2,1,8,core,festival-brunch,8,123.00,1A,05:47,Deep House

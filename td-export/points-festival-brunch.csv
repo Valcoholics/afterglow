@@ -1,0 +1,9 @@
+context,id,artist,title,x_norm,y_norm,z_norm,x_role_0_3,y_crowd_0_2,z_fit_0_10,membership,dominant_context,mean_confidence,bpm,key,duration,genre
+festival-brunch,3,Disclosure,Boiling (feat. Sinead Harnett),0.3182,0.5,0.6,0.9545,1,6,edge,afterglow,7.625,128.00,11A,03:46,Electronic
+festival-brunch,8,"Todd Terry, A-Trak",DJs Gotta Dance More feat. Todd Terry (Extended),0,0,0.8,0,0,8,core,afterglow,8.333,120.00,10A,04:44,House
+festival-brunch,20,Texture,Hit The Ground  (Extended Mix),0.3333,0.5,0.7,1,1,7,edge,sunrise-reset,8,122.00,6A,04:00,House
+festival-brunch,57,TENSHU,Stones Throw (Original Mix),0.3333,0.5,0.7,1,1,7,edge,afterglow,8,126.00,8A,05:13,UK Garage / Bassline
+festival-brunch,62,"Outkast, Sleepy Brown",The Way You Move (Original Mix),0.6667,0.5,0.8,2,1,8,core,pool-party,8.833,126.00,5A,03:54,Trap / Future Bass
+festival-brunch,63,Perrez,There's Never Been (No One Like You)(P's Sunrise Edit),0.3333,0.5,0.8,1,1,8,core,pool-party,8.25,117.72,10B,05:42,
+festival-brunch,66,Eli & Fur,Walk The Line (Extended Mix),0.3333,0.5,0.6,1,1,6,edge,sunrise-reset,8,123.00,9A,04:56,Melodic House & Techno
+festival-brunch,72,J. Koen,Where the Subtle Meets Infinity (Original Mix),0.6667,0.5,0.8,2,1,8,core,festival-brunch,8,123.00,1A,05:47,Deep House
