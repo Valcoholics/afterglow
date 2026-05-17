@@ -159,13 +159,14 @@ export default function ForceGraph({
   tracks,
   phase,
   showThreads,
+  selectedId,
   onSelect,
 }: {
   tracks: Track[];
   phase: Phase;
   showThreads: boolean;
-  // Kept for interface parity with the centroid view; the live graph
-  // drives focus from hover, not the persisted selection.
+  // Drives the persistent selection ring + sticky focus-lit on the graph
+  // (mirrors the Set grid's selected-node treatment).
   selectedId?: number | null;
   onSelect: (t: Track) => void;
 }) {
@@ -209,6 +210,16 @@ export default function ForceGraph({
   useEffect(() => {
     onSelectRef.current = onSelect;
   }, [onSelect]);
+  // Selected track (drives the persistent ring + sticky focus-lit, like
+  // the Set grid). Synced from the prop; the draw loop reads the ref.
+  // Mirror the selected id into a ref the draw loop can read. This effect
+  // ONLY touches its own ref (not the mount effect's sim/redraw refs), so
+  // it doesn't trip the cross-effect ref linter. Repaint on click is done
+  // inline in onUp; the sim's ticks cover the rest.
+  const selectedRef = useRef<number | null>(selectedId ?? null);
+  useEffect(() => {
+    selectedRef.current = selectedId ?? null;
+  }, [selectedId]);
 
   // Related-songs panel — pinned bottom-left of the graph (does NOT float
   // over the node, so the graph highlight stays fully visible). Holds the
@@ -304,10 +315,13 @@ export default function ForceGraph({
       const ph = phaseRef.current;
       const th = theme(ph);
       const accent = th.accent;
-      // Focus = the canvas-hovered node, OR the song row hovered in the
-      // pinned panel (so the parked list still drives the graph
-      // highlight). Selection doesn't focus — it opens the detail panel.
-      const focusId = rowHoverRef.current ?? hoverRef.current;
+      // Focus = canvas-hovered node, OR the pinned-list row being hovered,
+      // OR (sticky) the selected node — so a clicked track stays lit with
+      // its family until selection changes, like a held hover.
+      const focusId =
+        rowHoverRef.current ??
+        hoverRef.current ??
+        selectedRef.current;
       const focusSet =
         focusId != null
           ? adjacency.get(focusId) ?? new Set<number>()
@@ -348,12 +362,14 @@ export default function ForceGraph({
       // accent, the 9s a soft tint, everything else stays white. On hover,
       // the focused node + its neighbors light up and the rest dims hard.
       const WHITE: [number, number, number] = [205, 205, 211];
+      const selId = selectedRef.current;
       for (const n of nodes) {
         const id = n.track.id;
         const r = nodeR(n);
         const fit = timeConfidence(n.track, ph);
         const isFocus = id === focusId;
         const isNeighbor = focusSet?.has(id) ?? false;
+        const isSelected = id === selId;
 
         let fill: string;
         let alpha = 1;
@@ -391,6 +407,15 @@ export default function ForceGraph({
         if (isFocus) {
           ctx.lineWidth = 1.5;
           ctx.strokeStyle = rgb(accent, 0.6);
+          ctx.stroke();
+        }
+        // Persistent selection ring — same look as the Set grid's: a
+        // white halo offset off the node so a clicked track stays marked.
+        if (isSelected) {
+          ctx.beginPath();
+          ctx.arc(n.x!, n.y!, r + 6, 0, Math.PI * 2);
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = "rgba(255, 255, 255, 0.9)";
           ctx.stroke();
         }
         ctx.globalAlpha = 1;
@@ -512,7 +537,13 @@ export default function ForceGraph({
       downAt = null;
       if (moved > 5) return; // it was a drag
       const hit = nodeAt(x, y);
-      if (hit) onSelectRef.current(hit.track);
+      if (hit) {
+        // Reflect selection immediately (ring + sticky focus) without
+        // waiting for the prop round-trip — repaint even if settled.
+        selectedRef.current = hit.track.id;
+        onSelectRef.current(hit.track);
+        draw();
+      }
     };
     canvas.addEventListener("mousedown", onDown);
     canvas.addEventListener("mouseup", onUp);

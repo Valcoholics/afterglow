@@ -382,8 +382,10 @@ export default function Constellation({
           const member = membership(t, phase);
           const fit = timeConfidence(t, phase);
 
-          const baseR = 7 + (meanConfidence(t) - 5) * 2.4; // ~9–17px
-          const r0 = member === "edge" ? Math.max(8, baseR * 0.7) : baseR;
+          // Same radius formula as the Affinity graph (ForceGraph.nodeR)
+          // so node sizes match across the two views.
+          const baseR = 5 + (meanConfidence(t) - 5) * 1.6;
+          const r0 = member === "edge" ? Math.max(6, baseR * 0.7) : baseR;
           // Drupelet wobble so a stack reads as a bumpy berry.
           const r = Math.max(6, r0 + drupeletJitter(t.id));
 
@@ -535,7 +537,7 @@ export default function Constellation({
             Radius is generous (≥ node r) so dense rosettes stay easy to
             land on. Drawn last → never occluded by visible dots. */}
         {placed.map((t) => {
-          const baseR = 7 + (meanConfidence(t) - 5) * 2.4;
+          const baseR = 5 + (meanConfidence(t) - 5) * 1.6;
           const hitR = Math.max(12, baseR + 4);
           return (
             <circle
