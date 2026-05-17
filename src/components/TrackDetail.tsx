@@ -51,14 +51,15 @@ export default function TrackDetail({
       <div
         onClick={onClose}
         className={[
-          "fixed inset-0 z-10 bg-black/50 transition-opacity duration-300",
+          "fixed inset-0 z-10 bg-black/30 transition-opacity duration-300",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         ].join(" ")}
       />
 
       <aside
+        style={{ background: "#fff", borderColor: "#d8d3cc" }}
         className={[
-          "thin-scroll fixed right-0 top-0 z-20 flex h-full w-[420px] max-w-[92vw] flex-col gap-6 overflow-y-auto border-l border-white/10 bg-zinc-950/95 p-8 backdrop-blur-sm transition-transform duration-300",
+          "thin-scroll fixed right-0 top-0 z-20 flex h-full w-[420px] max-w-[92vw] flex-col gap-6 overflow-y-auto border-l p-8 transition-transform duration-300",
           open ? "translate-x-0" : "translate-x-full",
         ].join(" ")}
       >
@@ -66,16 +67,22 @@ export default function TrackDetail({
           <>
             <button
               onClick={onClose}
-              className="self-end text-sm text-zinc-500 transition-colors hover:text-zinc-200"
+              className="self-end text-sm transition-colors"
+              style={{ color: "#888" }}
             >
               Close ✕
             </button>
 
             <div className="flex flex-col gap-1.5">
-              <h2 className="text-2xl font-semibold leading-tight text-zinc-50">
+              <h2
+                className="text-2xl font-semibold leading-tight"
+                style={{ color: "#1a1a1a" }}
+              >
                 {track.title}
               </h2>
-              <p className="text-lg text-zinc-400">{track.artist}</p>
+              <p className="text-lg" style={{ color: "#666" }}>
+                {track.artist}
+              </p>
             </div>
 
             <div className="grid grid-cols-3 gap-x-3 gap-y-4 text-sm">
@@ -90,12 +97,27 @@ export default function TrackDetail({
               />
             </div>
 
-            <p className="rounded-md border border-white/10 bg-white/[0.03] px-3 py-2 text-xs leading-relaxed text-zinc-500">
+            <p
+              className="rounded-[3px] px-3 py-2 text-xs leading-relaxed"
+              style={{
+                background: "#f8f7f5",
+                border: "1px solid #d8d3cc",
+                color: "#666",
+              }}
+            >
               Drag a slider and watch this track move on the grid.{" "}
-              <span className="text-zinc-300">Role</span> drives its X,{" "}
-              <span className="text-zinc-300">Crowd</span> its Y — each is the
-              confidence-weighted average. Drag to{" "}
-              <span className="text-zinc-300">0</span> to untag it entirely.
+              <span style={{ color: "#1a1a1a" }} className="font-medium">
+                Role
+              </span>{" "}
+              drives its X,{" "}
+              <span style={{ color: "#1a1a1a" }} className="font-medium">
+                Crowd
+              </span>{" "}
+              its Y — each is the confidence-weighted average. Drag to{" "}
+              <span style={{ color: "#1a1a1a" }} className="font-medium">
+                0
+              </span>{" "}
+              to untag it entirely.
             </p>
 
             <SliderGroup
@@ -130,7 +152,10 @@ export default function TrackDetail({
               onChange={(v, c) => apply("time", v, c)}
             />
 
-            <p className="mt-auto text-xs leading-relaxed text-zinc-600">
+            <p
+              className="mt-auto text-xs leading-relaxed"
+              style={{ color: "#999" }}
+            >
               Every score is a DJ confidence (1–10), not an algorithm. The
               track lives wherever its strongest tags pull it — change them
               and the position follows. Edits are session-only.
@@ -153,10 +178,13 @@ function Meta({
 }) {
   return (
     <div className={className}>
-      <div className="text-[11px] uppercase tracking-wider text-zinc-500">
+      <div
+        className="text-[11px] uppercase tracking-wider"
+        style={{ color: "#888" }}
+      >
         {label}
       </div>
-      <div className="text-zinc-200">{value}</div>
+      <div style={{ color: "#1a1a1a" }}>{value}</div>
     </div>
   );
 }
@@ -177,10 +205,15 @@ function SliderGroup({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex items-baseline justify-between">
-        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-400">
+        <span
+          className="text-xs font-bold uppercase tracking-[0.18em]"
+          style={{ color: "#666" }}
+        >
           {title}
         </span>
-        <span className="text-[11px] text-zinc-600">{hint}</span>
+        <span className="text-[11px]" style={{ color: "#999" }}>
+          {hint}
+        </span>
       </div>
       {values.map((v) => (
         <ConfSlider
@@ -253,14 +286,13 @@ function ConfSlider({
               }}
             />
           )}
-          <span className={tagged ? "text-zinc-200" : "text-zinc-600"}>
+          <span style={{ color: tagged ? "#1a1a1a" : "#aaa" }}>
             {label}
           </span>
         </span>
         <span
-          className={
-            tagged ? "text-zinc-400 tabular-nums" : "text-zinc-700"
-          }
+          className={tagged ? "tabular-nums" : ""}
+          style={{ color: tagged ? "#666" : "#bbb" }}
         >
           {tagged ? `${conf}/10` : "untagged"}
         </span>
@@ -279,23 +311,27 @@ function ConfSlider({
         className="relative h-6 cursor-pointer touch-none select-none rounded-full"
       >
         {/* rail */}
-        <div className="absolute inset-x-0 top-1/2 h-1.5 -translate-y-1/2 overflow-hidden rounded-full bg-white/[0.06]">
+        <div
+          className="absolute inset-x-0 top-1/2 h-1.5 -translate-y-1/2 overflow-hidden rounded-full"
+          style={{ background: "#e0ddd8" }}
+        >
           <div
             className="h-full rounded-full transition-[width] duration-75"
             style={{
               width: `${pct}%`,
               backgroundColor: tagged
-                ? swatch ?? "#FF8C42"
+                ? swatch ?? "#1a1a1a"
                 : "transparent",
             }}
           />
         </div>
         {/* thumb */}
         <div
-          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-zinc-950 shadow transition-[left] duration-75"
+          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 shadow transition-[left] duration-75"
           style={{
             left: `${pct}%`,
-            backgroundColor: tagged ? swatch ?? "#FF8C42" : "#52525b",
+            borderColor: "#fff",
+            backgroundColor: tagged ? swatch ?? "#1a1a1a" : "#c4bfb8",
           }}
         />
       </div>

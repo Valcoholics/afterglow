@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
+import TaggingFlow from "@/components/TaggingFlow";
 import PlaylistPicker from "@/components/Timeline";
 import Constellation from "@/components/Constellation";
 import TrackDetail from "@/components/TrackDetail";
@@ -23,7 +24,15 @@ import {
   type TrackTags,
 } from "@/data/tracks";
 
+// The app is a two-stage experience. Stage 1 ("flow") is the light paper
+// tagging flow — it gates the app and is where a DJ preps their library.
+// Stage 2 ("constellation") is the spatial visualization. The flow's arrow
+// jumps straight here; the graph always renders the bundled library.json.
+type Stage = "flow" | "constellation";
+
 export default function Home() {
+  const [stage, setStage] = useState<Stage>("flow");
+
   const [phase, setPhase] = useState<Phase>(DEFAULT_PHASE);
   const [viewMode, setViewMode] = useState<ViewMode>("centroid");
   const [showThreads, setShowThreads] = useState(true);
@@ -35,8 +44,6 @@ export default function Home() {
   });
 
   // Single source of truth: tracks with the session edit overlay applied.
-  // Selecting/animating/coloring all read from this, so a re-tag flows to
-  // the node and the panel in the same render.
   const tracks = useMemo(() => effectiveTracks(edits), [edits]);
   const selected = useMemo(
     () => tracks.find((t) => t.id === selectedId) ?? null,
@@ -96,30 +103,70 @@ export default function Home() {
     [playlist, phase, selection, facetActive]
   );
 
+  // ── Stage 1: the light tagging flow ─────────────────────────────
+  if (stage === "flow") {
+    return (
+      <main
+        className="min-h-screen px-4 py-3"
+        style={{ background: "#f8f7f5", color: "#1a1a1a", lineHeight: 1.3 }}
+      >
+        <TaggingFlow onEnterConstellation={() => setStage("constellation")} />
+      </main>
+    );
+  }
+
+  // ── Stage 2: the constellation (light chrome, dark plot inset) ──
   return (
-    <div className="min-h-screen bg-black font-sans text-zinc-100">
+    <main
+      className="min-h-screen"
+      style={{ background: "#f8f7f5", color: "#1a1a1a" }}
+    >
       <div className="mx-auto flex max-w-[1400px] flex-col gap-8 px-6 py-10">
         <header className="flex items-start justify-between gap-4">
           <div className="flex flex-col gap-1">
-            <h1 className="text-2xl font-semibold tracking-tight">
+            <h1 className="text-2xl font-bold tracking-tight">
               Afterglow{" "}
-              <span className="text-zinc-600">· spatial DJ library</span>
+              <span style={{ color: "#888" }}>· spatial DJ library</span>
             </h1>
-            <p className="max-w-2xl text-sm text-zinc-500">
+            <p
+              className="max-w-2xl text-sm"
+              style={{ color: "#666" }}
+            >
               Open a track and drag its confidence sliders. The node moves
-              because <span className="text-zinc-300">position is the
-              tags</span> — X is the role centroid, Y is the crowd centroid.
-              Predict where it&apos;ll go before you let go.
+              because{" "}
+              <span style={{ color: "#1a1a1a" }} className="font-medium">
+                position is the tags
+              </span>{" "}
+              — X is the role centroid, Y is the crowd centroid. Predict where
+              it&apos;ll go before you let go.
             </p>
           </div>
-          {editCount > 0 && (
+          <div className="flex shrink-0 items-center gap-2">
+            {editCount > 0 && (
+              <button
+                onClick={resetEdits}
+                className="rounded-[3px] px-3 py-1.5 text-xs font-medium transition-colors"
+                style={{
+                  background: "#fff",
+                  color: "#1a1a1a",
+                  border: "1px solid #d8d3cc",
+                }}
+              >
+                Reset edits ({editCount}) ↺
+              </button>
+            )}
             <button
-              onClick={resetEdits}
-              className="shrink-0 rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-400 transition-colors hover:bg-white/[0.06] hover:text-zinc-200"
+              onClick={() => setStage("flow")}
+              className="rounded-[3px] px-3 py-1.5 text-xs font-medium transition-colors"
+              style={{
+                background: "#fff",
+                color: "#1a1a1a",
+                border: "1px solid #d8d3cc",
+              }}
             >
-              Reset edits ({editCount}) ↺
+              ← Tagging
             </button>
-          )}
+          </div>
         </header>
 
         <PlaylistPicker selected={phase} onSelect={setPhase} />
@@ -127,10 +174,13 @@ export default function Home() {
         <section className="flex flex-col gap-4">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <div className="flex items-baseline gap-3">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-400">
+              <h2
+                className="text-sm font-bold uppercase tracking-[0.2em]"
+                style={{ color: "#666" }}
+              >
                 {phaseName(phase)} set
               </h2>
-              <span className="text-xs text-zinc-500">
+              <span className="text-xs" style={{ color: "#888" }}>
                 {viewMode === "graph"
                   ? `${coreCount} core · clustered by what plays alike · hover a node to trace its family`
                   : facetActive
@@ -142,7 +192,12 @@ export default function Home() {
               {facetActive && (
                 <button
                   onClick={clearFacets}
-                  className="rounded-md border border-white/15 px-3 py-1 text-xs text-zinc-400 transition-colors hover:bg-white/[0.06] hover:text-zinc-200"
+                  className="rounded-[3px] px-3 py-1 text-xs font-medium"
+                  style={{
+                    background: "#fff",
+                    color: "#1a1a1a",
+                    border: "1px solid #d8d3cc",
+                  }}
                 >
                   Clear filters ✕
                 </button>
@@ -152,7 +207,8 @@ export default function Home() {
               <div
                 role="tablist"
                 aria-label="Layout"
-                className="flex rounded-md border border-white/15 p-0.5 text-xs"
+                className="flex rounded-[3px] p-0.5 text-xs"
+                style={{ border: "1px solid #d8d3cc", background: "#fff" }}
               >
                 {(
                   [
@@ -165,29 +221,32 @@ export default function Home() {
                     role="tab"
                     aria-selected={viewMode === mode}
                     onClick={() => setViewMode(mode)}
-                    className={[
-                      "rounded px-3 py-1 transition-colors",
+                    className="rounded-[2px] px-3 py-1 font-medium transition-colors"
+                    style={
                       viewMode === mode
-                        ? "bg-white/[0.12] text-zinc-100"
-                        : "text-zinc-500 hover:text-zinc-300",
-                    ].join(" ")}
+                        ? { background: "#1a1a1a", color: "#fff" }
+                        : { color: "#888" }
+                    }
                   >
                     {label}
                   </button>
                 ))}
               </div>
-              {/* Threads = same/adjacent key mixes. Off = positions only,
-                  no relationship overlay. */}
+              {/* Threads = same/adjacent key mixes. */}
               <button
                 onClick={() => setShowThreads((v) => !v)}
                 aria-pressed={showThreads}
                 title="Lines between tracks that mix in key (same or ±1 on the Camelot wheel)"
-                className={[
-                  "rounded-md border px-3 py-1 text-xs transition-colors",
+                className="rounded-[3px] px-3 py-1 text-xs font-medium transition-colors"
+                style={
                   showThreads
-                    ? "border-white/25 bg-white/[0.10] text-zinc-200"
-                    : "border-white/15 text-zinc-500 hover:text-zinc-300",
-                ].join(" ")}
+                    ? { background: "#1a1a1a", color: "#fff" }
+                    : {
+                        background: "#fff",
+                        color: "#888",
+                        border: "1px solid #d8d3cc",
+                      }
+                }
               >
                 Threads {showThreads ? "on" : "off"}
               </button>
@@ -208,8 +267,11 @@ export default function Home() {
 
           {/* Facet legend — only meaningful with axes (centroid mode) */}
           {viewMode === "centroid" && (
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] text-zinc-500">
-              <span className="uppercase tracking-wider text-zinc-600">
+            <div
+              className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px]"
+              style={{ color: "#888" }}
+            >
+              <span className="uppercase tracking-wider" style={{ color: "#888" }}>
                 Roles
               </span>
               {ROLES.map((r) => (
@@ -221,7 +283,10 @@ export default function Home() {
                   {r.label}
                 </span>
               ))}
-              <span className="ml-2 uppercase tracking-wider text-zinc-600">
+              <span
+                className="ml-2 uppercase tracking-wider"
+                style={{ color: "#888" }}
+              >
                 Crowd
               </span>
               {CROWDS.map((c) => (
@@ -236,14 +301,14 @@ export default function Home() {
             </div>
           )}
 
-          <p className="text-xs text-zinc-600">
+          <p className="text-xs" style={{ color: "#999" }}>
             {viewMode === "graph" ? (
               <>
                 Same library, no axes — a force layout pulls tracks together
-                by how alike their tags are. Tight clusters are your
-                signature moves; the lone nodes drifting at the edge are the
-                forgotten ones.{" "}
-                <span className="text-zinc-400">Heat</span> still = fit to{" "}
+                by how alike their tags are. Tight clusters are your signature
+                moves; the lone nodes drifting at the edge are the forgotten
+                ones.{" "}
+                <span style={{ color: "#666" }}>Heat</span> still = fit to{" "}
                 {phaseName(phase)}. Hover any node to light its family.
               </>
             ) : facetActive ? (
@@ -262,6 +327,6 @@ export default function Home() {
         onClose={() => setSelectedId(null)}
         onEdit={editTags}
       />
-    </div>
+    </main>
   );
 }

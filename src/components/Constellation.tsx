@@ -191,7 +191,10 @@ export default function Constellation({
   }, [placed, hovered, isGraph]);
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black">
+    <div
+      className="relative overflow-hidden rounded-[4px] bg-black"
+      style={{ border: "1px solid #d8d3cc" }}
+    >
       <svg
         viewBox={`0 0 ${W} ${H}`}
         className="relative z-10 h-auto w-full"
