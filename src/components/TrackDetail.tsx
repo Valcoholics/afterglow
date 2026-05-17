@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   CROWDS,
   PHASES,
@@ -33,6 +33,35 @@ export default function TrackDetail({
   }, [onClose]);
 
   const open = track != null;
+
+  // Demo playback. No real audio — a play/pause toggle with a faux
+  // progress bar so the panel reads like a player for the demo.
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(0); // 0..1
+  // Reset playback when a different track opens. React's "adjust state on
+  // prop change during render" pattern — no effect, no cascading renders.
+  const prevTrackId = useRef<number | null>(null);
+  if (track?.id !== prevTrackId.current) {
+    prevTrackId.current = track?.id ?? null;
+    if (playing) setPlaying(false);
+    if (progress !== 0) setProgress(0);
+  }
+  useEffect(() => {
+    if (!playing) return;
+    const t = window.setInterval(
+      () =>
+        setProgress((p) => {
+          const next = p + 0.004;
+          if (next >= 1) {
+            setPlaying(false);
+            return 0;
+          }
+          return next;
+        }),
+      120
+    );
+    return () => window.clearInterval(t);
+  }, [playing]);
 
   // confidence of a value within a dimension, 0 = not tagged
   const confOf = (dim: TagDim, value: string) =>
@@ -97,28 +126,64 @@ export default function TrackDetail({
               />
             </div>
 
-            <p
-              className="rounded-[3px] px-3 py-2 text-xs leading-relaxed"
+            <div
+              className="flex items-center gap-3 rounded-[3px] px-3 py-2.5"
               style={{
                 background: "#f8f7f5",
                 border: "1px solid #d8d3cc",
-                color: "#666",
               }}
             >
-              Drag a slider and watch this track move on the grid.{" "}
-              <span style={{ color: "#1a1a1a" }} className="font-medium">
-                Role
-              </span>{" "}
-              drives its X,{" "}
-              <span style={{ color: "#1a1a1a" }} className="font-medium">
-                Crowd
-              </span>{" "}
-              its Y — each is the confidence-weighted average. Drag to{" "}
-              <span style={{ color: "#1a1a1a" }} className="font-medium">
-                0
-              </span>{" "}
-              to untag it entirely.
-            </p>
+              <button
+                type="button"
+                onClick={() => setPlaying((v) => !v)}
+                aria-label={playing ? "Pause track" : "Play track"}
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white transition-transform active:scale-95"
+                style={{ background: "#1a1a1a" }}
+              >
+                {playing ? (
+                  // pause glyph
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden>
+                    <rect x="1.5" y="1" width="3" height="10" rx="0.5" />
+                    <rect x="7.5" y="1" width="3" height="10" rx="0.5" />
+                  </svg>
+                ) : (
+                  // play glyph
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden>
+                    <path d="M2.5 1.2v9.6a.6.6 0 0 0 .92.5l7.2-4.8a.6.6 0 0 0 0-1l-7.2-4.8a.6.6 0 0 0-.92.5Z" />
+                  </svg>
+                )}
+              </button>
+              <div className="min-w-0 flex-1">
+                <div className="mb-1 flex items-baseline justify-between">
+                  <span
+                    className="text-xs font-medium"
+                    style={{ color: "#1a1a1a" }}
+                  >
+                    {playing ? "Now playing" : "Play track"}
+                  </span>
+                  <span
+                    className="text-[10px] tabular-nums"
+                    style={{ color: "#888" }}
+                  >
+                    {fmtTime(progress * trackSeconds(track.duration))} /{" "}
+                    {track.duration || "0:00"}
+                  </span>
+                </div>
+                <div
+                  className="h-1 w-full overflow-hidden rounded-full"
+                  style={{ background: "#e0ddd8" }}
+                >
+                  <div
+                    className="h-full rounded-full"
+                    style={{
+                      width: `${progress * 100}%`,
+                      background: "#1a1a1a",
+                      transition: "width 120ms linear",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
 
             <SliderGroup
               title="Journey Role"
@@ -165,6 +230,19 @@ export default function TrackDetail({
       </aside>
     </>
   );
+}
+
+// "06:33" / "6:33" → total seconds (0 if unparseable). Demo only.
+function trackSeconds(duration: string): number {
+  const m = /^(\d+):(\d{1,2})$/.exec((duration || "").trim());
+  if (!m) return 0;
+  return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+}
+// seconds → "m:ss".
+function fmtTime(secs: number): string {
+  const s = Math.max(0, Math.floor(secs));
+  const m = Math.floor(s / 60);
+  return `${m}:${String(s % 60).padStart(2, "0")}`;
 }
 
 function Meta({

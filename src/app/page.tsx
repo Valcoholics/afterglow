@@ -34,7 +34,9 @@ export default function Home() {
   const [stage, setStage] = useState<Stage>("flow");
 
   const [phase, setPhase] = useState<Phase>(DEFAULT_PHASE);
-  const [viewMode, setViewMode] = useState<ViewMode>("centroid");
+  // Affinity graph is the default view; the Set grid tab is still there
+  // to switch into.
+  const [viewMode, setViewMode] = useState<ViewMode>("graph");
   const [showThreads, setShowThreads] = useState(true);
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [edits, setEdits] = useState<EditMap>({});

@@ -26,6 +26,7 @@ import {
   type Positioned,
   type ViewMode,
 } from "@/lib/spatial";
+import ForceGraph from "@/components/ForceGraph";
 
 const rgbStr = ([r, g, b]: [number, number, number]) =>
   `rgb(${r}, ${g}, ${b})`;
@@ -189,6 +190,25 @@ export default function Constellation({
       topPct: (ay / members.length / H) * 100,
     };
   }, [placed, hovered, isGraph]);
+
+  // Graph mode is a LIVE simulation (Obsidian-style), not the static SVG.
+  // It owns its own canvas render + drag; centroid mode below is unchanged.
+  if (isGraph) {
+    return (
+      <div
+        className="relative overflow-hidden rounded-[4px] bg-black"
+        style={{ border: "1px solid #d8d3cc" }}
+      >
+        <ForceGraph
+          tracks={tracks}
+          phase={phase}
+          showThreads={showThreads}
+          selectedId={selectedId}
+          onSelect={onSelect}
+        />
+      </div>
+    );
+  }
 
   return (
     <div
